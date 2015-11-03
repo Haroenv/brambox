@@ -1,0 +1,80 @@
+---
+# for jekyll
+---
+
+$background: #7f1734;
+$foreground: #FFFFFF;
+
+$transition: all 300ms cubic-bezier(1, .010, 0, 1.005);
+$sans-serif: Futura, 'Trebuchet MS', Arial, sans-serif;
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  color: $foreground;
+  font-family: $sans-serif;
+  padding: 1rem;
+}
+
+a {
+  color: $foreground;
+}
+
+.content, footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+
+  h2 {
+    width: 100%;
+  }
+
+  button {
+    width: 47%;
+  }
+}
+
+.audio {
+  display: none;
+}
+
+.button {
+  background: $foreground;
+  border-radius: .3rem;
+  color: $background;
+  padding: 1rem 2rem;
+  margin: .3rem;
+  text-decoration: none;
+  transition: $transition;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-style: none;
+  font-family: inherit;
+  font-size: inherit;
+
+  &:hover {
+    background: none;
+    box-shadow: inset 0 0 0 1px $foreground;
+    color: $foreground;
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 2px $foreground;
+  }
+}
