@@ -42,8 +42,14 @@ a {
   }
 
   button {
-    width: 47%;
+    width: calc(50% - 2 * .3rem);
   }
+}
+
+footer {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .audio {
@@ -54,7 +60,7 @@ a {
   background: $foreground;
   border-radius: .3rem;
   color: $background;
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin: .3rem;
   text-decoration: none;
   transition: $transition;
