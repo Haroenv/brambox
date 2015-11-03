@@ -72,6 +72,8 @@ footer {
   border-style: none;
   font-family: inherit;
   font-size: inherit;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     background: none;
