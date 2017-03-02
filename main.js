@@ -35,13 +35,3 @@ var addPlayListener = function(play) {
 for (var i = 0; i < songs.length; i++) {
   addPlayListener(songs[i]);
 }
-
-/* google analytics, don't forget to  */
-/* load the ga.js script in the html  */
-/* file.                              */
-window.ga = window.ga || function() {
-  (ga.q = ga.q||[]).push(arguments);
-};
-ga.l = +new Date;
-ga('create', 'UA-27277115-3', 'auto');
-ga('send', 'pageview');
